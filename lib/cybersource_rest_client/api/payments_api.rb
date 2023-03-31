@@ -26,6 +26,7 @@ module CyberSource
     # @param [Hash] opts the optional parameters
     # @return [PtsV2PaymentsPost201Response]
     def create_payment(create_payment_request, opts = {})
+      puts '========================CREATE PAYMENT'
       data, status_code, headers = create_payment_with_http_info(create_payment_request, opts)
       return data, status_code, headers
     end
